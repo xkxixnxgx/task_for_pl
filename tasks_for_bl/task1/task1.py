@@ -1,13 +1,14 @@
 # необходимо установить в текущем виртуальном окружении модуль numpy
 from numpy import percentile
 from sys import argv
-data = argv[1]
 
 
 def format (value):
     format_value = "%.2f" % value
     return format_value
 
+
+data = argv[1]
 
 with open(data, 'r', encoding='utf-8') as f:
     line = []
